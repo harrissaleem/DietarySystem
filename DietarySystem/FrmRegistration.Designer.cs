@@ -1,6 +1,6 @@
 ﻿namespace DietarySystem
 {
-    partial class Form1
+    partial class frmRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -45,116 +45,127 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 27);
+            this.textBox1.Location = new System.Drawing.Point(236, 52);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(196, 31);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 33);
+            this.label1.Location = new System.Drawing.Point(30, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Family Name :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(277, 33);
+            this.label2.Location = new System.Drawing.Point(554, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(128, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "First Name :";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(358, 30);
+            this.textBox2.Location = new System.Drawing.Point(716, 58);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(196, 31);
             this.textBox2.TabIndex = 3;
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(95, 172);
+            this.monthCalendar1.Location = new System.Drawing.Point(190, 331);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(18, 17, 18, 17);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 172);
+            this.label3.Location = new System.Drawing.Point(24, 331);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(141, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Date of birth :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 71);
+            this.label4.Location = new System.Drawing.Point(24, 137);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(77, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Email :";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 71);
+            this.textBox3.Location = new System.Drawing.Point(236, 137);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(196, 31);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(358, 78);
+            this.textBox4.Location = new System.Drawing.Point(716, 150);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(6);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 107);
+            this.textBox4.Size = new System.Drawing.Size(386, 202);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(118, 114);
+            this.textBox5.Location = new System.Drawing.Point(236, 219);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(6);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(196, 31);
             this.textBox5.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(289, 74);
+            this.label5.Location = new System.Drawing.Point(578, 142);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(103, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Address :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 117);
+            this.label6.Location = new System.Drawing.Point(24, 225);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.Size = new System.Drawing.Size(179, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Contact Number :";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(477, 372);
+            this.button1.Location = new System.Drawing.Point(954, 715);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 44);
+            this.button1.Size = new System.Drawing.Size(394, 85);
             this.button1.TabIndex = 12;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmRegistration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1776, 1049);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -168,9 +179,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "frmRegistration";
+            this.Text = "Registration Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

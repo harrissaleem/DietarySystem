@@ -10,26 +10,22 @@ using System.Windows.Forms;
 
 namespace DietarySystem
 {
-    public partial class Form1 : Form
+    public partial class FrmLogin : Form
     {
-        public Form1()
+        public FrmLogin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            DialogResult = DialogResult.OK;            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            DialogResult = DialogResult.Ignore;
         }
     }
 }

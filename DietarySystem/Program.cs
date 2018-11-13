@@ -16,7 +16,16 @@ namespace DietarySystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            FrmLogin login = new FrmLogin();
+            if(login.ShowDialog() == DialogResult.Ignore)
+            {
+                Application.Run(new frmRegistration());
+            }
+            else if(login.ShowDialog() == DialogResult.OK)
+            {
+                //Start app
+            }            
         }
     }
 }
