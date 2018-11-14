@@ -15,17 +15,30 @@ namespace DietarySystem
         public FrmLogin()
         {
             InitializeComponent();
+            lblStatus.Visible = false;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Close();
-            DialogResult = DialogResult.OK;            
+            if(txtUsername.Text.Equals("sad") && txtPassword.Text.Equals("sad"))
+            {
+                this.Close();
+                FrmScheduling frmSch = new FrmScheduling();
+                frmSch.Show();
+            }
+            else
+            {
+                lblStatus.Visible = true;
+                lblStatus.Text = "Wromg credentials";
+            }                        
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Ignore;
+            this.Hide();
+            frmRegistration frm = new frmRegistration();
+            frm.Show();
+                        
         }
     }
 }

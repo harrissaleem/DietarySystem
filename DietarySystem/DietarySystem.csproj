@@ -58,6 +58,12 @@
     <Compile Include="FrmRegistration.Designer.cs">
       <DependentUpon>FrmRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmScheduling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScheduling.Designer.cs">
+      <DependentUpon>FrmScheduling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistration.resx">
       <DependentUpon>FrmRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScheduling.resx">
+      <DependentUpon>FrmScheduling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
