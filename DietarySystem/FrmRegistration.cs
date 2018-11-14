@@ -16,5 +16,10 @@ namespace DietarySystem
         {
             InitializeComponent();
         }
+
+        private void frmRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
