@@ -41,6 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -48,7 +49,7 @@
             this.textBox1.Location = new System.Drawing.Point(236, 52);
             this.textBox1.Margin = new System.Windows.Forms.Padding(6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 31);
+            this.textBox1.Size = new System.Drawing.Size(271, 31);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -76,7 +77,7 @@
             this.textBox2.Location = new System.Drawing.Point(716, 58);
             this.textBox2.Margin = new System.Windows.Forms.Padding(6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 31);
+            this.textBox2.Size = new System.Drawing.Size(302, 31);
             this.textBox2.TabIndex = 3;
             // 
             // monthCalendar1
@@ -111,7 +112,7 @@
             this.textBox3.Location = new System.Drawing.Point(236, 137);
             this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 31);
+            this.textBox3.Size = new System.Drawing.Size(271, 31);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
@@ -120,7 +121,7 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(6);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(386, 202);
+            this.textBox4.Size = new System.Drawing.Size(302, 202);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
@@ -128,7 +129,7 @@
             this.textBox5.Location = new System.Drawing.Point(236, 219);
             this.textBox5.Margin = new System.Windows.Forms.Padding(6);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(196, 31);
+            this.textBox5.Size = new System.Drawing.Size(271, 31);
             this.textBox5.TabIndex = 9;
             // 
             // label5
@@ -153,19 +154,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(954, 715);
+            this.button1.Location = new System.Drawing.Point(63, 879);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(394, 85);
+            this.button1.Size = new System.Drawing.Size(140, 50);
             this.button1.TabIndex = 12;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(328, 879);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(140, 50);
+            this.btnCancel.TabIndex = 13;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1776, 1049);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -202,6 +214,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
 
