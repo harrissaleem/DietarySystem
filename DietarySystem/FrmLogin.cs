@@ -16,6 +16,7 @@ namespace DietarySystem
         {
             InitializeComponent();
             lblStatus.Visible = false;
+            TogglePanels(1);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -39,6 +40,31 @@ namespace DietarySystem
             frmRegistration frm = new frmRegistration();
             frm.Show();
                         
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            TogglePanels(2);
+        }
+
+        void TogglePanels(int i)
+        {
+            pnlLogin.Visible = false;
+            pnlForgot.Visible = false;
+            switch (i)
+            {
+                
+                case 1:
+                    pnlLogin.Visible = true;
+                    break;
+
+                case 2:
+                    pnlForgot.Visible = true;
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }

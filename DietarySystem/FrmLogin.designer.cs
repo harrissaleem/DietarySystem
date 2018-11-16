@@ -41,7 +41,16 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlLogin = new System.Windows.Forms.Panel();
+            this.pnlForgot = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.pnlLogin.SuspendLayout();
+            this.pnlForgot.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -52,7 +61,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(390, 289);
+            this.txtUsername.Location = new System.Drawing.Point(323, 249);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(6);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
@@ -61,7 +70,7 @@
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(609, 479);
+            this.btnSignUp.Location = new System.Drawing.Point(542, 439);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(6);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(150, 44);
@@ -72,7 +81,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(390, 479);
+            this.btnLogin.Location = new System.Drawing.Point(323, 439);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(150, 44);
@@ -89,7 +98,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(390, 367);
+            this.txtPassword.Location = new System.Drawing.Point(323, 327);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(6);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
@@ -103,7 +112,7 @@
             this.lblLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblLogin.Location = new System.Drawing.Point(209, 89);
+            this.lblLogin.Location = new System.Drawing.Point(142, 49);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(612, 95);
             this.lblLogin.TabIndex = 11;
@@ -114,7 +123,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(171, 297);
+            this.lblUsername.Location = new System.Drawing.Point(104, 257);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(172, 37);
             this.lblUsername.TabIndex = 12;
@@ -124,7 +133,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(171, 375);
+            this.label1.Location = new System.Drawing.Point(104, 335);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 37);
             this.label1.TabIndex = 14;
@@ -134,26 +143,102 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblStatus.Location = new System.Drawing.Point(398, 428);
+            this.lblStatus.Location = new System.Drawing.Point(318, 514);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(70, 25);
             this.lblStatus.TabIndex = 15;
             this.lblStatus.Text = "label2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(318, 394);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Forgot password?";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pnlLogin
+            // 
+            this.pnlLogin.Controls.Add(this.label2);
+            this.pnlLogin.Controls.Add(this.lblStatus);
+            this.pnlLogin.Controls.Add(this.label1);
+            this.pnlLogin.Controls.Add(this.lblUsername);
+            this.pnlLogin.Controls.Add(this.lblLogin);
+            this.pnlLogin.Controls.Add(this.txtPassword);
+            this.pnlLogin.Controls.Add(this.btnLogin);
+            this.pnlLogin.Controls.Add(this.btnSignUp);
+            this.pnlLogin.Controls.Add(this.txtUsername);
+            this.pnlLogin.Location = new System.Drawing.Point(52, 52);
+            this.pnlLogin.Name = "pnlLogin";
+            this.pnlLogin.Size = new System.Drawing.Size(909, 637);
+            this.pnlLogin.TabIndex = 17;
+            // 
+            // pnlForgot
+            // 
+            this.pnlForgot.Controls.Add(this.label6);
+            this.pnlForgot.Controls.Add(this.label7);
+            this.pnlForgot.Controls.Add(this.button1);
+            this.pnlForgot.Controls.Add(this.textBox2);
+            this.pnlForgot.Location = new System.Drawing.Point(55, 36);
+            this.pnlForgot.Name = "pnlForgot";
+            this.pnlForgot.Size = new System.Drawing.Size(895, 633);
+            this.pnlForgot.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(148, 346);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 37);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Email";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label7.Location = new System.Drawing.Point(139, 138);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(665, 95);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Forgot Password";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(320, 439);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 44);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Send";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(320, 338);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(425, 45);
+            this.textBox2.TabIndex = 17;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1047, 732);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.txtUsername);
+            this.ClientSize = new System.Drawing.Size(1032, 732);
+            this.Controls.Add(this.pnlForgot);
+            this.Controls.Add(this.pnlLogin);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -162,8 +247,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.pnlLogin.ResumeLayout(false);
+            this.pnlLogin.PerformLayout();
+            this.pnlForgot.ResumeLayout(false);
+            this.pnlForgot.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -180,6 +268,13 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlLogin;
+        private System.Windows.Forms.Panel pnlForgot;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

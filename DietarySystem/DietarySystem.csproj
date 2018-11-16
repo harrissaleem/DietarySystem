@@ -64,8 +64,20 @@
     <Compile Include="FrmScheduling.Designer.cs">
       <DependentUpon>FrmScheduling.cs</DependentUpon>
     </Compile>
+    <Compile Include="Labellers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labellers.Designer.cs">
+      <DependentUpon>Labellers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmScheduling.resx">
       <DependentUpon>FrmScheduling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labellers.resx">
+      <DependentUpon>Labellers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
