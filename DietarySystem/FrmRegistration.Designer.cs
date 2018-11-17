@@ -186,6 +186,7 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSubmit.Location = new System.Drawing.Point(376, 835);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(6);
             this.btnSubmit.Name = "btnSubmit";
@@ -205,6 +206,7 @@
             // 
             // btnBack
             // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnBack.Location = new System.Drawing.Point(527, 835);
             this.btnBack.Margin = new System.Windows.Forms.Padding(6);
             this.btnBack.Name = "btnBack";
@@ -212,6 +214,7 @@
             this.btnBack.TabIndex = 18;
             this.btnBack.Text = "Cancel";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmRegistration
             // 

@@ -50,6 +50,7 @@
             this.btnSubmit.TabIndex = 31;
             this.btnSubmit.Text = "Create";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label6
             // 
@@ -154,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1609, 1146);
             this.ControlBox = false;
             this.Controls.Add(this.label5);

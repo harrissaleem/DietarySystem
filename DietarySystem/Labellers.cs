@@ -27,5 +27,10 @@ namespace DietarySystem
             dgv.Rows.Add(new object[] { "Session10", "27/11/18 - 10:00 AM", "Editing", "Videos are currently in annotation" });
             dgv.Rows.Add(new object[] { "Session11", "27/11/18 - 11:00 AM", "Editing", "Videos are currently in annotation" });
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Video annotation state updated", "Successful");
+        }
     }
 }

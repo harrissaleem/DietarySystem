@@ -66,5 +66,10 @@ namespace DietarySystem
                     break;
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            TogglePanels(1);
+        }
     }
 }

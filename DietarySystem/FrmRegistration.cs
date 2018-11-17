@@ -21,5 +21,12 @@ namespace DietarySystem
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+            this.Close();
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace DietarySystem
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A user is successfully created", "Successful");
+        }
     }
 }

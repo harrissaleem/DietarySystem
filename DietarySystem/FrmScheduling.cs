@@ -18,6 +18,7 @@ namespace DietarySystem
         {
             InitializeComponent();
             TogglePanels(99);
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void createBookingToolStripMenuItem_Click(object sender, EventArgs e)
@@ -35,7 +36,10 @@ namespace DietarySystem
             lbl.Hide();
 
             if (use != null)
+            {
                 use.Hide();
+            }
+                
             switch (i)
             {
                 case 1:
@@ -58,6 +62,8 @@ namespace DietarySystem
                     {
                         lbl = new Labellers();
                         lbl.MdiParent = this;
+                        lbl.Anchor = (AnchorStyles.Bottom | AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+                        lbl.Dock = DockStyle.Fill;
                     }
                     lbl.Show();
                     break;
@@ -67,6 +73,8 @@ namespace DietarySystem
                     {
                         use = new User();
                         use.MdiParent = this;
+                        use.Anchor = (AnchorStyles.Bottom | AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+                        use.Dock = DockStyle.Fill;
                     }
                     use.Show();
                     break;
@@ -93,6 +101,42 @@ namespace DietarySystem
         private void createUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TogglePanels(5);
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your booking has been created", "Successful");
+            TogglePanels(99);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your booking has been cancelled", "Successful");
+            TogglePanels(99);
+        }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Do you really wish to Logout?", "Logout", MessageBoxButtons.YesNo);
+
+            if(result == DialogResult.Yes)
+            {
+                FrmLogin frm = new FrmLogin();
+                frm.Show();
+                this.Close();
+            }
+            else
+            {
+
+            }
+
+           
         }
     }
 }
