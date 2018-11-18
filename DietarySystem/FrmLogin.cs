@@ -42,7 +42,7 @@ namespace DietarySystem
                         
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnForgotPassword_Click(object sender, EventArgs e)
         {
             TogglePanels(2);
         }

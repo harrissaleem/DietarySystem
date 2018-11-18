@@ -36,6 +36,7 @@
             this.accountToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.labellersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlCreate = new System.Windows.Forms.Panel();
             this.lblCurrentBook = new System.Windows.Forms.Label();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -54,7 +55,6 @@
             this.pnlCancel = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblCancelDescription = new System.Windows.Forms.Label();
-            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlCreate.SuspendLayout();
             this.pnlCancel.SuspendLayout();
@@ -117,16 +117,23 @@
             // labellersToolStripMenuItem
             // 
             this.labellersToolStripMenuItem.Name = "labellersToolStripMenuItem";
-            this.labellersToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.labellersToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
             this.labellersToolStripMenuItem.Text = "Labellers";
             this.labellersToolStripMenuItem.Click += new System.EventHandler(this.labellersToolStripMenuItem_Click);
             // 
             // createUserToolStripMenuItem
             // 
             this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
-            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.createUserToolStripMenuItem.Text = "Create User";
+            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.createUserToolStripMenuItem.Text = "Add User";
             this.createUserToolStripMenuItem.Click += new System.EventHandler(this.createUserToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem1
+            // 
+            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
+            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(102, 36);
+            this.logoutToolStripMenuItem1.Text = "Logout";
+            this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
             // 
             // pnlCreate
             // 
@@ -350,21 +357,14 @@
             this.lblCancelDescription.TabIndex = 17;
             this.lblCancelDescription.Text = "Currently booked on\r\n24 November 18\r\n2 : 00 PM\r\n";
             // 
-            // logoutToolStripMenuItem1
-            // 
-            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
-            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(102, 38);
-            this.logoutToolStripMenuItem1.Text = "Logout";
-            this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
-            // 
             // FrmScheduling
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1374, 994);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnlCancel);
             this.Controls.Add(this.pnlCreate);
+            this.Controls.Add(this.pnlCancel);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmScheduling";

@@ -44,11 +44,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.pnlForgot = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.pnlLogin.SuspendLayout();
             this.pnlForgot.SuspendLayout();
@@ -161,7 +161,7 @@
             this.label2.Size = new System.Drawing.Size(200, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "Forgot password?";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Click += new System.EventHandler(this.btnForgotPassword_Click);
             // 
             // pnlLogin
             // 
@@ -190,6 +190,17 @@
             this.pnlForgot.Name = "pnlForgot";
             this.pnlForgot.Size = new System.Drawing.Size(895, 633);
             this.pnlForgot.TabIndex = 18;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(524, 439);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(150, 44);
+            this.btnBack.TabIndex = 23;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label6
             // 
@@ -233,25 +244,14 @@
             this.textBox2.Size = new System.Drawing.Size(425, 45);
             this.textBox2.TabIndex = 17;
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(524, 439);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(150, 44);
-            this.btnBack.TabIndex = 23;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1032, 732);
-            this.Controls.Add(this.pnlForgot);
             this.Controls.Add(this.pnlLogin);
+            this.Controls.Add(this.pnlForgot);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DietarySystem
 {
-    public partial class User : Form
+    public partial class AddUser : Form
     {
-        public User()
+        public AddUser()
         {
             InitializeComponent();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void btnCreateUser_Click(object sender, EventArgs e)
         {
             MessageBox.Show("A user is successfully created", "Successful");
         }

@@ -13,7 +13,7 @@ namespace DietarySystem
     public partial class FrmScheduling : Form
     {
         Labellers lbl;
-        User use;
+        AddUser use;
         public FrmScheduling()
         {
             InitializeComponent();
@@ -71,7 +71,7 @@ namespace DietarySystem
                 case 5:
                     if (use == null)
                     {
-                        use = new User();
+                        use = new AddUser();
                         use.MdiParent = this;
                         use.Anchor = (AnchorStyles.Bottom | AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
                         use.Dock = DockStyle.Fill;

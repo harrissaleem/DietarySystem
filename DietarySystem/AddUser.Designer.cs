@@ -1,6 +1,6 @@
 ﻿namespace DietarySystem
 {
-    partial class User
+    partial class AddUser
     {
         /// <summary>
         /// Required designer variable.
@@ -50,7 +50,7 @@
             this.btnSubmit.TabIndex = 31;
             this.btnSubmit.Text = "Create";
             this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            this.btnSubmit.Click += new System.EventHandler(this.btnCreateUser_Click);
             // 
             // label6
             // 
